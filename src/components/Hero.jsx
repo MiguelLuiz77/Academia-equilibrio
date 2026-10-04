@@ -65,17 +65,17 @@ export default function Hero() {
           </h1>
           <p className="mt-5 max-w-2xl text-sm leading-6 text-white/75 sm:mt-6 sm:text-base sm:leading-7">{config.hero.description}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href={getWhatsAppLink(config.messages.trial)} target="_blank" rel="noopener noreferrer" className="button-primary group px-6 py-4">
+            <a href={getWhatsAppLink(config.messages.trial)} target="_blank" rel="noopener noreferrer" className="button-primary group w-full justify-center px-6 py-4 sm:w-auto">
               Marcar aula experimental <ArrowRight className="transition-transform group-hover:translate-x-1" size={18} aria-hidden="true" />
             </a>
-            <a href="#planos" className="button-outline px-6 py-4">Ver planos</a>
+            <a href="#planos" className="button-outline w-full justify-center px-6 py-4 sm:w-auto">Ver planos</a>
           </div>
           <div className="mt-10 flex max-w-3xl flex-wrap gap-2" aria-label="Modalidades disponíveis">
             {config.hero.modalities.map((item) => <span key={item} className="rounded-full border border-white/15 bg-black/25 px-3.5 py-2 text-xs font-medium text-white/75 backdrop-blur-sm sm:text-sm">{item}</span>)}
           </div>
         </div>
       </div>
-      <a href="#sobre" aria-label="Role para conhecer a academia" className="scroll-cue absolute bottom-7 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/55 sm:flex">
+      <a href="#sobre" aria-label="Role para conhecer a academia" className="scroll-cue absolute bottom-7 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/55">
         <span>Role para explorar</span><ArrowDown size={17} className="text-brand" aria-hidden="true" />
       </a>
     </section>
