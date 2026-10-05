@@ -21,7 +21,7 @@ const gymSchema = {
   telephone: config.phone,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Av. Pres. Tancredo Neves, 3090 - Jardim Nova Michigan',
+    streetAddress: 'Av. Pres. Tancredo Neves, 3090, Jardim Nova Michigan',
     addressLocality: config.city,
     addressRegion: 'SP',
     postalCode: '12225-000',

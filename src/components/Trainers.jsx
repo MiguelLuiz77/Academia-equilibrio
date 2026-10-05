@@ -11,11 +11,11 @@ export default function Trainers() {
           <h2 className="section-title mt-4">{config.trainers.titleLead} <span>{config.trainers.titleAccent}</span></h2>
           <p className="body-copy mt-5">{config.trainers.description}</p>
         </Reveal>
-        <div className="mt-9 grid gap-5 sm:grid-cols-2">
+        <div className="mt-9 grid items-start gap-5 sm:grid-cols-2">
           {config.trainers.people.map((person, index) => (
             <Reveal key={person.name} delay={index * 100}>
-              <article className="trainer-card group relative isolate aspect-[4/5] min-h-[420px] overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#151615]">
-                <img src={person.image} alt={person.alt} className={`absolute inset-0 -z-20 h-full w-full object-cover ${person.name === 'Isaías Wilson' ? 'object-[center_42%]' : 'object-[center_34%]'}`} loading="lazy" />
+              <article className={`trainer-card group relative isolate overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#151615] ${person.name === 'Isaías Wilson' ? 'aspect-[1024/1535]' : 'aspect-[4/5] min-h-[420px]'}`}>
+                <img src={person.image} alt={person.alt} className={`absolute inset-0 -z-20 h-full w-full object-cover ${person.name === 'Isaías Wilson' ? 'object-center' : 'object-[center_34%]'}`} loading="lazy" />
                 <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/15 to-black/5 transition duration-300 group-hover:from-black/95" aria-hidden="true" />
                 <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/15 to-transparent" aria-hidden="true" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full border border-white/20 bg-black/45 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 backdrop-blur-md sm:left-7 sm:top-7"><span className="h-1.5 w-1.5 rounded-full bg-brand" />Equipe Equilíbrio</div>

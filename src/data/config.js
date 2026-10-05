@@ -4,7 +4,7 @@ export const config = {
   tagline: 'Esporte e Saúde',
   phone: '(12) 99731-0620',
   whatsappNumber: '5512997310620',
-  address: 'Av. Pres. Tancredo Neves, 3090 - Jardim Nova Michigan, São José dos Campos - SP, 12225-000',
+  address: 'Av. Pres. Tancredo Neves, 3090, Jardim Nova Michigan, São José dos Campos, SP, 12225-000',
   city: 'São José dos Campos',
   navigation: [
     { label: 'Início', href: '#inicio' },
@@ -18,6 +18,7 @@ export const config = {
     trial: 'Olá! Gostaria de marcar uma aula experimental na Academia Equilíbrio.',
     membership: 'Olá! Gostaria de pagar minha mensalidade na Academia Equilíbrio.',
     dayPass: 'Olá! Gostaria de pagar uma diária na Academia Equilíbrio.',
+    planInterest: 'Olá! Tenho interesse no plano {planName} da Academia Equilíbrio.',
     general: 'Olá! Vim pelo site e gostaria de mais informações.',
   },
   hero: {
@@ -70,7 +71,7 @@ export const config = {
     description: 'Pessoas que recebem você bem e estão por perto para apoiar a sua jornada de saúde.',
     people: [
       { name: 'Taísa Alves', image: '/assets/taisa-alves.jpg', alt: 'Taísa Alves, instrutora da Academia Equilíbrio' },
-      { name: 'Isaías Wilson', image: '/assets/isaias-wilson-portrait.jpg', alt: 'Isaías Wilson, instrutor da Academia Equilíbrio' },
+      { name: 'Isaías Wilson', image: '/assets/isaias-wilson-original.jpg', alt: 'Isaías Wilson, instrutor da Academia Equilíbrio' },
     ],
   },
   reasons: {
@@ -91,11 +92,14 @@ export const config = {
     description: 'Escolha como começar e venha treinar com a gente.',
     benefits: ['Acesso à estrutura completa', 'Equipe de apoio durante o treino'],
     plans: [
-      { name: 'Primeira mensalidade + matrícula', amount: 'R$ 110', cents: ',00', suffix: 'pagamento único', description: 'Valor único para começar, já com a taxa de matrícula inclusa.', button: 'Quero começar', messageKey: 'membership' },
-      { name: 'Mensalidade', amount: 'R$ 89', cents: ',00', suffix: 'por mês', description: 'A partir do segundo mês.', button: 'Pagar mensalidade', messageKey: 'membership', featured: true },
-      { name: 'Diária', amount: 'R$ 10', cents: ',00', suffix: 'por dia', description: 'Treine sem compromisso, quando quiser.', button: 'Pagar diária', messageKey: 'dayPass' },
+      { name: 'Primeira mensalidade + matrícula', price: 110, paymentCondition: 'Pagamento único', observation: 'Valor único para começar, já com a taxa de matrícula inclusa.', button: 'Quero começar' },
+      { name: 'Mensalidade', price: 89, paymentCondition: 'Por mês', observation: 'A partir do segundo mês.', button: 'Pagar mensalidade', featured: true, badge: 'Mais escolhido' },
+      { name: 'Diária', price: 10, paymentCondition: 'Por dia', observation: 'Treine sem compromisso, quando quiser.', button: 'Pagar diária' },
+      { name: 'Trimestral', price: 254.7, paymentCondition: 'À vista', observation: 'Pagamento à vista', button: 'Quero o plano trimestral' },
+      { name: 'Semestral', price: 499.4, paymentCondition: 'Em até 2x', observation: 'Parcelamento com juros da maquininha', button: 'Quero o plano semestral' },
+      { name: 'Anual', price: 898.8, paymentCondition: 'Em até 4x', observation: 'Parcelamento com juros da maquininha', button: 'Quero o plano anual' },
     ],
-    summary: 'Primeira mensalidade com matrícula: R$ 110,00  •  Demais mensalidades: R$ 89,00  •  Diária: R$ 10,00',
+    summary: 'Confira as condições de pagamento em cada plano. Parcelamentos no cartão sujeitos a juros da maquininha.',
   },
   location: {
     eyebrow: 'Perto de você',
@@ -103,7 +107,7 @@ export const config = {
     titleAccent: 'conhecer',
     description: 'Passe para conhecer a academia e descobrir como podemos fazer parte da sua rotina.',
     photo: '/assets/academia-fachada.jpg',
-    mapQuery: 'Academia Equilíbrio, Av. Pres. Tancredo Neves, 3090 - Jardim Nova Michigan, São José dos Campos - SP, 12225-000',
+    mapQuery: 'Academia Equilíbrio, Av. Pres. Tancredo Neves, 3090, Jardim Nova Michigan, São José dos Campos, SP, 12225-000',
   },
   contact: {
     eyebrow: 'Estamos por aqui',

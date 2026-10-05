@@ -56,8 +56,7 @@ export default function Hero() {
       <div className="hero-overlay absolute inset-0 -z-10" aria-hidden="true" />
       <div className="mx-auto w-full max-w-7xl px-5 pb-28 pt-20 sm:px-8 sm:pb-32 lg:px-10 lg:pt-24" style={{ transform: `translate3d(0, ${scrollProgress * -22}px, 0)`, opacity: 1 - scrollProgress * 0.52 }}>
         <div className="max-w-3xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand/30 bg-black/35 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-light sm:text-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand shadow-[0_0_12px_#7ED321]" />
+          <div className="mb-6 text-xs font-semibold uppercase tracking-[0.18em] text-brand-light sm:text-sm">
             {config.hero.eyebrow}
           </div>
           <h1 className="font-heading text-3xl font-extrabold leading-[1.1] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
