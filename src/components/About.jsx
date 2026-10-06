@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { CheckCircle2, Sparkles } from 'lucide-react'
 import { config } from '../data/config.js'
+import Eyebrow from './Eyebrow.jsx'
 import Reveal from './Reveal.jsx'
 
 function StatCard({ stat, delay }) {
@@ -43,7 +44,7 @@ export default function About() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_.9fr] lg:items-center lg:gap-20 lg:px-10">
         <div>
           <Reveal>
-            <p className="eyebrow"><span />{config.about.eyebrow}</p>
+            <Eyebrow>{config.about.eyebrow}</Eyebrow>
             <h2 className="section-title mt-4">{config.about.titleLead} <span>{config.about.titleAccent}</span> {config.about.titleEnd}</h2>
             <p className="body-copy mt-5 max-w-2xl">{config.about.description}</p>
           </Reveal>
@@ -51,7 +52,7 @@ export default function About() {
             {config.about.stats.map((stat, index) => <Reveal key={stat.label} delay={index * 80}><StatCard stat={stat} delay={index * 80} /></Reveal>)}
           </div>
           <Reveal delay={180}>
-            <div className="mt-7 flex items-center gap-3 text-sm text-white/65"><CheckCircle2 size={18} className="shrink-0 text-brand" aria-hidden="true" /><span>Um lugar para começar, continuar e celebrar cada conquista.</span></div>
+            <div className="mt-7 flex min-w-0 items-center gap-3 text-sm text-white/65"><CheckCircle2 size={18} className="shrink-0 text-brand" aria-hidden="true" /><span className="min-w-0 break-words">Um lugar para começar, continuar e celebrar cada conquista.</span></div>
           </Reveal>
         </div>
         <Reveal className="relative mx-auto w-full max-w-lg">

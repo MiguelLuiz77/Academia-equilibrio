@@ -6,6 +6,12 @@ export const config = {
   whatsappNumber: '5512997310620',
   address: 'Av. Pres. Tancredo Neves, 3090, Jardim Nova Michigan, São José dos Campos, SP, 12225-000',
   city: 'São José dos Campos',
+  seo: {
+    socialImage: '/assets/logo.jpg',
+  },
+  analytics: {
+    googleMeasurementId: '',
+  },
   navigation: [
     { label: 'Início', href: '#inicio' },
     { label: 'Sobre', href: '#sobre' },
@@ -94,7 +100,7 @@ export const config = {
     plans: [
       { name: 'Primeira mensalidade + matrícula', price: 110, paymentCondition: 'Pagamento único', observation: 'Valor único para começar, já com a taxa de matrícula inclusa.', button: 'Quero começar' },
       { name: 'Mensalidade', price: 89, paymentCondition: 'Por mês', observation: 'A partir do segundo mês.', button: 'Pagar mensalidade', featured: true, badge: 'Mais escolhido' },
-      { name: 'Diária', price: 10, paymentCondition: 'Por dia', observation: 'Treine sem compromisso, quando quiser.', button: 'Pagar diária' },
+      { name: 'Diária', price: 15, paymentCondition: 'Por dia', observation: 'Treine sem compromisso, quando quiser.', button: 'Pagar diária' },
       { name: 'Trimestral', price: 254.7, paymentCondition: 'À vista', observation: 'Pagamento à vista', button: 'Quero o plano trimestral' },
       { name: 'Semestral', price: 499.4, paymentCondition: 'Em até 2x', observation: 'Parcelamento com juros da maquininha', button: 'Quero o plano semestral' },
       { name: 'Anual', price: 898.8, paymentCondition: 'Em até 4x', observation: 'Parcelamento com juros da maquininha', button: 'Quero o plano anual' },

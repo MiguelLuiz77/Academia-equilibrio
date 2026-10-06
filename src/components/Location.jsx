@@ -1,5 +1,6 @@
 import { ArrowUpRight, MapPin, Navigation } from 'lucide-react'
 import { config } from '../data/config.js'
+import Eyebrow from './Eyebrow.jsx'
 import Reveal from './Reveal.jsx'
 
 export default function Location() {
@@ -11,7 +12,7 @@ export default function Location() {
     <section id="localizacao" className="section-space bg-[#111111]">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         <Reveal className="max-w-2xl">
-          <p className="eyebrow"><span />{config.location.eyebrow}</p>
+          <Eyebrow>{config.location.eyebrow}</Eyebrow>
           <h2 className="section-title mt-4">{config.location.titleLead} <span>{config.location.titleAccent}</span></h2>
           <p className="body-copy mt-5">{config.location.description}</p>
         </Reveal>

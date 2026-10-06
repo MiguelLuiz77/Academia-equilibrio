@@ -8,10 +8,10 @@ export default function Header() {
 
   return (
     <header className="site-header fixed inset-x-0 top-0 z-50 border-b border-white/10">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8 lg:px-10">
-        <a href="#inicio" className="flex items-center gap-3" aria-label={`${config.name}, início`} onClick={() => setMenuOpen(false)}>
+      <div className="mx-auto flex min-w-0 max-w-7xl items-center justify-between px-5 py-3 sm:px-8 lg:px-10">
+        <a href="#inicio" className="flex min-w-0 items-center gap-3" aria-label={`${config.name}, início`} onClick={() => setMenuOpen(false)}>
           <img src="/assets/logo.jpg" alt="Logo da Academia Equilíbrio" className="h-11 w-11 rounded-full border border-white/10 object-cover" />
-          <span className="font-heading text-base font-extrabold tracking-tight text-white sm:text-lg">{config.shortName}<span className="text-brand">.</span></span>
+          <span className="min-w-0 truncate font-heading text-base font-extrabold tracking-tight text-white sm:text-lg">{config.shortName}<span className="text-brand">.</span></span>
         </a>
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Navegação principal">

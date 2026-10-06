@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowDown, ArrowRight } from 'lucide-react'
 import { config } from '../data/config.js'
+import Eyebrow from './Eyebrow.jsx'
 import { getWhatsAppLink } from '../utils/whatsapp.js'
 
 export default function Hero() {
@@ -55,17 +56,15 @@ export default function Hero() {
       </video>
       <div className="hero-overlay absolute inset-0 -z-10" aria-hidden="true" />
       <div className="mx-auto w-full max-w-7xl px-5 pb-28 pt-20 sm:px-8 sm:pb-32 lg:px-10 lg:pt-24" style={{ transform: `translate3d(0, ${scrollProgress * -22}px, 0)`, opacity: 1 - scrollProgress * 0.52 }}>
-        <div className="max-w-3xl">
-          <div className="mb-6 text-xs font-semibold uppercase tracking-[0.18em] text-brand-light sm:text-sm">
-            {config.hero.eyebrow}
-          </div>
+        <div className="min-w-0 max-w-3xl">
+          <div className="mb-6"><Eyebrow>{config.hero.eyebrow}</Eyebrow></div>
           <h1 className="font-heading text-3xl font-extrabold leading-[1.1] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
             {config.hero.titleLead} <span className="text-brand">{config.hero.titleAccent}</span> {config.hero.titleEnd}
           </h1>
           <p className="mt-5 max-w-2xl text-sm leading-6 text-white/75 sm:mt-6 sm:text-base sm:leading-7">{config.hero.description}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href={getWhatsAppLink(config.messages.trial)} target="_blank" rel="noopener noreferrer" className="button-primary group w-full justify-center px-6 py-4 sm:w-auto">
-              Marcar aula experimental <ArrowRight className="transition-transform group-hover:translate-x-1" size={18} aria-hidden="true" />
+              <span className="min-w-0 break-words">Marcar aula experimental</span><ArrowRight className="shrink-0 transition-transform group-hover:translate-x-1" size={18} aria-hidden="true" />
             </a>
             <a href="#planos" className="button-outline w-full justify-center px-6 py-4 sm:w-auto">Ver planos</a>
           </div>
